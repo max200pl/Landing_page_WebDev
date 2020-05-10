@@ -1,0 +1,197 @@
+@import "fonts.css";
+
+body {
+    background: gray;
+    font-family: "Open Sans";
+}
+
+ul,
+li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+/* Menu */
+.menu-bar {
+    background: #fff;
+    color: #212121;
+    padding: 20px 0;
+}
+
+.menu__item {
+    margin-left: 37px;
+}
+
+.menu__item a {
+    font-family: "Open Sans Semibold";
+    font-size: 20px;
+    color: #212121;
+}
+
+.menu__item a:hover {
+    text-decoration: none;
+}
+
+/* /menu */
+
+/* Header */
+.header {
+    color: white;
+    text-align: center;
+    padding: 180px 0;
+    background-image: url("../img/header.png");
+    background-size: cover;
+    background-position: 0 100%;
+}
+
+.header__title {
+    font-size: 55px;
+}
+
+.header__text {
+    font-size: 20px;
+    margin-bottom: 100px;
+}
+
+/* Button */
+.button {
+    text-transform: uppercase;
+    padding: 10px 25px;
+    margin: 80 10px;
+    color: white;
+    transition: 0.3s;
+    background-color: #00897b;
+    border: 1px solid #00897b;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: transparent;
+    border: 1px solid white;
+}
+
+.button__full {
+    cursor: pointer;
+    background-color: #00897b;
+    border: 1px solid #00897b;
+}
+
+
+/* /button */
+
+/* About */
+
+.about {
+    padding-top: 125px;
+    padding-bottom: 125px;
+    color: black;
+    text-align: center;
+    background: white;
+}
+
+.about__title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.about__text {
+    color: #212121;
+    font-size: 15px;
+    transition: 0.3s;
+    margin-bottom: 110px;
+}
+
+.about__h3 {
+    margin-top: 30px;
+    font-family: "Open Sans Semibold";
+    font-size: 20px;
+}
+
+/*Наши услуги*/
+.services {
+    padding-top: 120px;
+    padding-bottom: 125px;
+    color: black;
+    text-align: center;
+    background: #e4fdf9;
+}
+
+.our_card {
+    background: white;
+    padding: 40px 25px;
+    transition: 0.3s;
+    margin-bottom: 30px;
+}
+
+.our_card:hover {
+    background: #00897b;
+    color: white;
+    box-shadow: 0px 10px 12px -3px rgba(0, 0, 0.26);
+}
+
+.our_card:hover .about__text {
+    color: white;
+}
+
+.our_card:hover .button-services {
+    color: white;
+    border: 2px solid white;
+}
+
+.button-services {
+    transition: 0.3s;
+    border: 2px solid black;
+    padding: 12px;
+    background: transparent;
+    padding: 14px 12px;
+    font-family: "Open Sans Semibold";
+    cursor: pointer;
+}
+
+/* PORTFOLIO */
+
+.portfolio {
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 125px;
+}
+
+.portfolio button:hover,
+.focused {
+    color: #000;
+    background: transparent;
+    cursor: pointer;
+    border: 1px solid #00897b;
+}
+
+.portfolio img {
+    margin-bottom: 30px;
+}
+
+.filter {
+    padding: 120px 0;
+}
+
+div[filter]:hover img {
+    /*затемнение*/
+    filter: brightness(50%);
+
+    transition: 0.3s;
+}
+
+.text {
+    display: none;
+}
+
+div[filter]:hover .text {
+    display: block;
+    width: 100%;
+    color: #ffff;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    z-index: 1000;
+    text-align: center;
+}
