@@ -294,7 +294,6 @@ div[filter]:hover .text {
     font-family: "Open Sans Semibold";
 }
 
-
 .team p {
     font-size: 14px;
     margin-bottom: 30px;
@@ -304,7 +303,6 @@ div[filter]:hover .text {
     margin: 0 auto;
     max-width: 340px;
 }
-
 
 .icons {
     margin: auto;
@@ -341,4 +339,91 @@ div[filter]:hover .text {
 
 .dots-style li[class="slick-active"] button {
     background: #3949ab;
+}
+
+/* FOOTER */
+
+.footer {
+    padding-top: 165px;
+    padding-bottom: 125px;
+    color: #fff;
+    background-image: url(../img/footer.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.footer .about__text {
+    color: #fff;
+}
+
+.fa-map-marker-alt,
+.fa-phone-alt,
+.fa-envelope {
+    font-size: 62px;
+    color: #fff;
+}
+
+.circle {
+    background-color: #3949ab;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle+p {
+    font-size: 20px;
+}
+
+.footer input,
+.footer textarea {
+    padding: 30px;
+    width: 100%;
+    border-radius: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+
+.footer input:focus,
+.footer textarea:focus {
+    outline: none;
+}
+
+.footer textarea {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    resize: none;
+}
+
+.footer button {
+    font-style: 20px;
+    font-family: "Roboto";
+    text-transform: uppercase;
+    color: #212121;
+    padding: 20px 80px;
+    border-radius: 10px;
+    border: none;
+    transition: .3s;
+
+}
+
+
+.footer button:hover {
+    opacity: .6;
+}
+
+.form {
+    margin-top: 70px;
+}
+
+.rules p {
+    padding: 20px 0;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 0;
 }
