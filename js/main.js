@@ -40,7 +40,40 @@ $(document).ready(function () {
           slidesToScroll: 3,
           arrows: false,
           dots: true,
-          dotsClass: 'dots-style'
+          dotsClass: 'dots-style',
+          responsive: [
+               {
+                    breakpoint: 1024,
+                    settings: {
+                         slidesToShow: 2,
+                         slidesToScroll: 2,
+                    }
+               },
+               {
+                    breakpoint: 600,
+                    settings: {
+                         slidesToShow: 2,
+                         slidesToScroll: 2
+                    }
+               },
+               {
+                    breakpoint: 480,
+                    settings: {
+                         slidesToShow: 1,
+                         slidesToScroll: 1
+                    }
+               }
+          ]
+     });
+
+     $('ul.menu a[href^="#"').click(function () {
+          let target = $(this).attr('href');
+          $('html, body').animate({
+               scrollTop: $(target).offset().top
+          }, 500);
+          $('ul.menu a[href^="#"').css({ 'color': '#212121' });
+          $(this).css({ 'color': '#004bee' });
+          return false;
      });
 });
 
