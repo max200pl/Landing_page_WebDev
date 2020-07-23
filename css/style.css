@@ -311,7 +311,7 @@ div[filter]:hover .text {
     max-width: 70%;
 }
 
-.icons>a>img {
+.icons > a > img {
     max-width: 40px;
     max-height: 40px;
 }
@@ -375,7 +375,7 @@ div[filter]:hover .text {
     align-items: center;
 }
 
-.circle+p {
+.circle + p {
     font-size: 20px;
 }
 
@@ -387,7 +387,6 @@ div[filter]:hover .text {
     border-radius: 10px;
     border: none;
 }
-
 
 .footer input:focus,
 .footer textarea:focus {
@@ -409,9 +408,7 @@ div[filter]:hover .text {
     border-radius: 10px;
     border: none;
     transition: .3s;
-
 }
-
 
 .footer button:hover {
     opacity: .6;
@@ -426,4 +423,10 @@ div[filter]:hover .text {
     text-align: center;
     font-weight: 600;
     margin-bottom: 0;
+}
+
+@media screen and (max-width: 1024px) {
+    nav {
+        display: none;
+    }
 }
